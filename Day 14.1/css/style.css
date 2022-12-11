@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+}
+
+.team{
+    display: flex;
+}
+
+.outer-div{
+    margin: 20px;
+    text-align: center;
+    background-color: blue;
+}
+
+.inner-div img{
+    width: 100%;
+    border-radius: 50%;
+}

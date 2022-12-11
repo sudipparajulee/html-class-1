@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: Poppns, sans-serif;
+    font-size: 24px;
+}
+
+.myheading{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}

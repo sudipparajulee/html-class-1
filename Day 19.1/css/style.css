@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+}
+
+.mytable{
+    background-color: rgb(153, 143, 143);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.mytable td, .mytable th{
+    border: 1px solid rgb(122, 104, 104);
+    padding: 10px;
+
+}
+
+.mytable th{
+    background-color: green;
+    color: white;
+}

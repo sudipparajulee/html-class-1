@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(244, 234, 234);
+}
+
+.mybtn{
+    background-color: rgb(79, 46, 179);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 1px 2px rgb(101, 97, 97);
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.mybtn:hover{
+    background-color: rgb(78, 62, 128);
+    /* border-radius: 15px; */
+    box-shadow: 1px 1px 3px rgb(101, 97, 97);
+
+}
+
+.mylist{
+    list-style-type: none;
+    text-align: right;
+    background-color: blue;
+    padding: 10px;
+}
+
+.mylist li{
+    display: inline;
+    margin: 10px;
+    color: white;
+}
+
+.mylist li:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.text-center{
+    text-align: center;
+}

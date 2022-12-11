@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: aqua;
+}
+
+p{
+    margin: 0;
+}
+
+.pricing{
+    padding: 10px 40px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.div-container{
+    float: left;
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+}
+
+.mydiv1, .mydiv2, .mydiv3{
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 31, 31);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.mydiv1 h1{
+    margin: 0;
+}
+
+
+.button a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(235, 8, 46);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button{
+    margin: 10px;
+    margin-top: 30px;
+}

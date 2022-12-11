@@ -1,0 +1,63 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: white;
+    padding: 10px 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.logo img{
+    height: 150px;
+}
+
+.flag img{
+    height: 100px;
+}
+
+
+.title{
+    color: red;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.big-title{
+    font-size: 48px;
+}
+
+.navbar{
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.ul{
+    text-align: center;
+}
+
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}

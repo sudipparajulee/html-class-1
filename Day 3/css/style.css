@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: Poppins, sans-serif;
+}
+
+.my-heading{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.mydiv{
+    background-color: rgb(21, 21, 199);
+    color: white;
+    padding: 20px;
+    width: 300px;
+}

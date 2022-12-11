@@ -1,0 +1,43 @@
+body{
+    font-family: sans-serif;
+}
+
+.outer-div{
+    width: 25%;
+    float: left;
+}
+
+.inner-div{
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.mydiv{
+    padding: 10px 50px;
+}
+
+@media screen and (max-width:768px) {
+    .outer-div{
+        width: 50%;
+    }
+
+    .mydiv{
+        padding: 10px 20px;
+    }
+
+    .hideontab{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .outer-div{
+        width: 100%;
+    }
+
+    .mydiv{
+        padding: 5px;
+    }
+}
