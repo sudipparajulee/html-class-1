@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return validate()">
+        <input type="text" placeholder="Enter Your Name" id="name">
+        <br><span id="message" style="color: red; font-size: 10px;"></span><br>
+        <button type="submit">Click</button>
+    </form>
+
+    <script>
+        function validate()
+        {
+            var name = document.getElementById('name').value;
+            if(name == '')
+            {
+                document.getElementById('message').innerHTML = '* Please fill this field';
+                return false;
+            }
+
+            if(name.length < 5)
+            {
+                document.getElementById('message').innerHTML = '* The field must be at least 5 character long';
+                return false;
+            }
+
+            var pattern = /[A-Z][a-z]{5}/; //regex
+            if(!name.match(pattern))
+            {
+                document.getElementById('message').innerHTML = '* Must contain only text of at least 6 character';
+                return false;
+            }
+            // alert('Hello ' + name);
+        }
+    </script>
+</body>
+</html>
