@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <input type="number" id="percent" placeholder="Enter Value">
+    <p class="progress"><span class="pvalue" id="pvalue">5%</span></p>
+    <button onclick="myFunction()">Click</button>
+    <script>
+        
+        var start=5;
+        function myFunction()
+        {
+            var per = document.getElementById('percent').value;        
+            per = parseInt(per);
+            if(per >=5 && per <=100)
+            {
+                document.getElementById('pvalue').innerHTML = start+'%';
+                document.getElementById('pvalue').style.width = start+'%';
+                
+                var x = setTimeout(myFunction,100);
+
+                if(start >= per)
+                {
+                    clearTimeout(x);
+                }   
+                else
+                {
+                    start= start+1;
+                }
+            }
+
+            else
+            {
+                alert('The value must be between 5 andn 100');
+            }
+        }
+    </script>
+</body>
+</html>
