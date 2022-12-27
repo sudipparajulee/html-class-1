@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span><i class="fa fa-phone"></i>०७८-४०१०८३, ०७८-५४००१८</span>
+        <span><i class="fab fa-facebook"></i> | <i class="fab fa-twitter"></i> | <i class="fa fa-map-marker-alt"></i> | <i class="fa fa-envelope"></i></span>
+    </div>
+
+    <div class="logo-bar">
+        <img src="https://mofaga.gov.np/images/site_logo.png" alt="">
+        <div class="head-title">
+            <span>प्रदेश सरकार <br>
+
+                स्वास्थ्य तथा जनसंख्या मन्त्रालय <br>
+                
+                स्वास्थ्य निर्देशनालय <br>
+                
+                <span class="big-title">स्वास्थ्य कार्यालय</span> <br>
+                नवलपरासी ( बर्दघाट सुस्ता पूर्व ) <br>
+                
+                गण्डकी प्रदेश, नेपाल</span>
+        </div>
+        <img class="flag-img" src="https://mofaga.gov.np/images/np_flag.gif" alt="">
+    </div>
+
+
+    <div class="navbar">
+        <ul class="menu">
+            <li><a href="index.html"> <i class="fa fa-home"></i> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा <i class="fa fa-angle-down"></i></a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+        </ul>
+    </div>
+
+    <div class="mob-bar">
+        <i onclick="showHideMenu()" class="fa fa-bars"></i>
+        <ul class="mob-menu" id="mob-menu">
+            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+            <li><a href="index.html"> गृहपृष्‍ठ</a></li>
+            <li><a href="index.html"> हाम्रो बारेमा</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function showHideMenu(){
+            var menu = document.getElementById('mob-menu');
+            if(menu.style.display != 'block')
+            {
+                menu.style.display = 'block';
+            }
+            else
+            {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

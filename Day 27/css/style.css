@@ -1,0 +1,113 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: white;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+.logo-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo-bar img{
+    height: 120px;
+}
+
+.head-title{
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.big-title{
+    font-size: 48px;
+}
+
+.navbar{
+    background-color: blue;
+    padding: 10px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.mob-bar{
+    background-color: blue;
+    color: white;
+    display: none;
+}
+
+.mob-bar > i{
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mob-menu{
+    list-style-type: none;
+    display: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.mob-menu li{
+    padding: 10px;
+}
+
+.mob-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    background-color: red;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-bar{
+        flex-direction: column;
+    }
+
+    .flag-img{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .mob-bar{
+        display: block;
+    }
+}
