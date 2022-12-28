@@ -89,6 +89,35 @@ body{
     border-radius: 8px;
 }
 
+.heading-area{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+
+
+.heading-innerarea{
+    background-color: rgba(37, 35, 35, 0.427);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;   
+}
+
+.heading-area p{
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
 @media screen and (max-width: 1024px) {
     .top-bar{
         flex-direction: column;
