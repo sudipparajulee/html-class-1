@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"> -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -29,6 +35,20 @@
             <li class=" m-4 text-white"><a href="">Login</a></li>
         </ul>
     </nav>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="md:h-[800px] w-full md:object-cover" src="http://cmsa.org.np/images/banners/nhh_1669901817.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="md:h-[800px] w-full md:object-cover" src="http://cmsa.org.np/images/banners/IMG_7164_1669900974.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <img src="https://sureshdrivingschool.com/images/cargif.gif" alt="">
+
+
+    <iframe width="1275" height="717" src="https://www.youtube.com/embed/ta07bMHe8Lk" title="Teenpatey - Dekhera Timilai | Sujan Chapagain&Bidhya Tiwari Ft. Milan|Anu|Samrant|Hark|Nayan|Ayushma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
     <div class="hidden fixed top-0 right-0 bottom-0 left-0 bg-blue-300 bg-opacity-40 backdrop-blur-sm">
@@ -173,5 +193,19 @@
             }
         }
     </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+        //   slidesPerView: 3,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
 </body>
 </html>
