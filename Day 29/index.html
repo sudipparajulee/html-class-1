@@ -13,10 +13,25 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
 </head>
 <body>
 
-    <nav class="bg-blue-600 hidden md:block">
+    <h1 class="wow animate__animated animate__fadeInLeft text-4xl font-bold">Hello</h1>
+
+    <nav class="bg-blue-600 hidden md:flex justify-between items-center sticky top-0 z-10" >
+        <div class="flex items-center"><img class="h-20 transition-all" src="http://cmsa.org.np/images/logo.png" alt="" id="logoimg"><i>HELLO</i></div>
         <ul class="p-4 text-right">
             <li class="inline m-4 text-white"><a href="">Home</a></li>
             <li class="inline m-4 text-white"><a href="">About</a></li>
@@ -47,6 +62,28 @@
 
     <img src="https://sureshdrivingschool.com/images/cargif.gif" alt="">
 
+    <h1 class="wow animate__animated animate__fadeInLeft text-4xl font-bold">Hello</h1>
+
+
+    <div class="px-20 py-20">
+        <div class="border-l-4 border-blue-600 pl-2">
+            <h1 class="font-bold text-4xl">Gallery</h1>
+            <p>View our gallery photos at a glance</p>
+        </div>
+        <div class="grid grid-cols-3 gap-20 m-2">
+                <a data-fancybox="gallery" data-src="http://cmsa.org.np/images/gallery/IMG_7168_1669901363.JPG">
+                <img class="w-full" src="http://cmsa.org.np/images/gallery/IMG_7168_1669901363.JPG" />
+                </a>
+    
+                <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
+                <img class="w-full" src="https://lipsum.app/id/3/200x150" />
+                </a>
+    
+                <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
+                <img class="w-full" src="https://lipsum.app/id/4/200x150" />
+                </a>
+        </div>
+    </div>
 
     <iframe width="1275" height="717" src="https://www.youtube.com/embed/ta07bMHe8Lk" title="Teenpatey - Dekhera Timilai | Sujan Chapagain&Bidhya Tiwari Ft. Milan|Anu|Samrant|Hark|Nayan|Ayushma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -68,7 +105,7 @@
         <p class="text-3xl font-bold">हाम्रो सूचनाहरु</p>
     <hr>
 
-    <div class="m-2">
+    <div class="m-2" style="height: 300px; background-color: aqua; overflow: auto;">
         <div class="flex justify-between p-2 m-1 rounded hover:bg-gray-200 flex-col sm:flex-row">
             <div>
                 <p class="font-bold">औषधि खरिद कोटेशन </p>
@@ -179,6 +216,8 @@
     </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
     <script>
         function showHide(){
             var menu = document.getElementById('menu');
@@ -207,5 +246,21 @@
           },
         });
       </script>
+
+<script>
+    new WOW().init();
+    </script>
+
+    <script>
+        window.onscroll = function(){
+            if(window.scrollY > 40){
+                document.getElementById('logoimg').style.height = '0px';
+            }
+            else
+            {
+                document.getElementById('logoimg').style.height = '80px';
+            }
+        }
+    </script>
 </body>
 </html>
